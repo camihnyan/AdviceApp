@@ -13,6 +13,17 @@
 		5764686A2795954E0008E6FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576468682795954E0008E6FE /* Main.storyboard */; };
 		5764686C279595550008E6FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5764686B279595550008E6FE /* Assets.xcassets */; };
 		5764686F279595550008E6FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5764686D279595550008E6FE /* LaunchScreen.storyboard */; };
+		5764687F279595DC0008E6FE /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764687E279595DC0008E6FE /* ServiceLayer.swift */; };
+		57646881279595F50008E6FE /* ServiceLayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57646880279595F50008E6FE /* ServiceLayerProtocol.swift */; };
+		57646883279596140008E6FE /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57646882279596140008E6FE /* RequestModel.swift */; };
+		57646885279596280008E6FE /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57646884279596280008E6FE /* ErrorModel.swift */; };
+		57646887279596410008E6FE /* AdviceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57646886279596410008E6FE /* AdviceRequest.swift */; };
+		57646889279596800008E6FE /* AdviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57646888279596800008E6FE /* AdviceService.swift */; };
+		5764688C2795975D0008E6FE /* AdviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764688B2795975D0008E6FE /* AdviceModel.swift */; };
+		5764688E279598070008E6FE /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764688D279598070008E6FE /* AdviceViewModel.swift */; };
+		57646890279598480008E6FE /* AdviceModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764688F279598480008E6FE /* AdviceModelProtocol.swift */; };
+		57646892279598630008E6FE /* AdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57646891279598630008E6FE /* AdviceViewController.swift */; };
+		576468942795986D0008E6FE /* AdviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576468932795986D0008E6FE /* AdviceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,17 @@
 		5764686B279595550008E6FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5764686E279595550008E6FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57646870279595550008E6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5764687E279595DC0008E6FE /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		57646880279595F50008E6FE /* ServiceLayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayerProtocol.swift; sourceTree = "<group>"; };
+		57646882279596140008E6FE /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		57646884279596280008E6FE /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		57646886279596410008E6FE /* AdviceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceRequest.swift; sourceTree = "<group>"; };
+		57646888279596800008E6FE /* AdviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceService.swift; sourceTree = "<group>"; };
+		5764688B2795975D0008E6FE /* AdviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceModel.swift; sourceTree = "<group>"; };
+		5764688D279598070008E6FE /* AdviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewModel.swift; sourceTree = "<group>"; };
+		5764688F279598480008E6FE /* AdviceModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceModelProtocol.swift; sourceTree = "<group>"; };
+		57646891279598630008E6FE /* AdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewController.swift; sourceTree = "<group>"; };
+		576468932795986D0008E6FE /* AdviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,8 @@
 		576468612795954D0008E6FE /* AdviceApp */ = {
 			isa = PBXGroup;
 			children = (
+				5764687A2795958E0008E6FE /* Network */,
+				576468762795956C0008E6FE /* Modules */,
 				576468622795954D0008E6FE /* AppDelegate.swift */,
 				576468642795954E0008E6FE /* SceneDelegate.swift */,
 				576468662795954E0008E6FE /* ViewController.swift */,
@@ -65,6 +89,87 @@
 				57646870279595550008E6FE /* Info.plist */,
 			);
 			path = AdviceApp;
+			sourceTree = "<group>";
+		};
+		576468762795956C0008E6FE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5764688A279597520008E6FE /* Model */,
+				57646879279595820008E6FE /* View */,
+				57646878279595790008E6FE /* ViewModel */,
+				57646877279595740008E6FE /* Service */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		57646877279595740008E6FE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				57646888279596800008E6FE /* AdviceService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		57646878279595790008E6FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5764688D279598070008E6FE /* AdviceViewModel.swift */,
+				5764688F279598480008E6FE /* AdviceModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		57646879279595820008E6FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57646891279598630008E6FE /* AdviceViewController.swift */,
+				576468932795986D0008E6FE /* AdviceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5764687A2795958E0008E6FE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5764687D279595B30008E6FE /* Request */,
+				5764687C279595A80008E6FE /* Base */,
+				5764687B2795959C0008E6FE /* Service Layer */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5764687B2795959C0008E6FE /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+				5764687E279595DC0008E6FE /* ServiceLayer.swift */,
+				57646880279595F50008E6FE /* ServiceLayerProtocol.swift */,
+			);
+			path = "Service Layer";
+			sourceTree = "<group>";
+		};
+		5764687C279595A80008E6FE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				57646882279596140008E6FE /* RequestModel.swift */,
+				57646884279596280008E6FE /* ErrorModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5764687D279595B30008E6FE /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				57646886279596410008E6FE /* AdviceRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		5764688A279597520008E6FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5764688B2795975D0008E6FE /* AdviceModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +243,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57646885279596280008E6FE /* ErrorModel.swift in Sources */,
+				57646892279598630008E6FE /* AdviceViewController.swift in Sources */,
 				576468672795954E0008E6FE /* ViewController.swift in Sources */,
 				576468632795954D0008E6FE /* AppDelegate.swift in Sources */,
+				5764688C2795975D0008E6FE /* AdviceModel.swift in Sources */,
+				57646887279596410008E6FE /* AdviceRequest.swift in Sources */,
+				576468942795986D0008E6FE /* AdviceView.swift in Sources */,
 				576468652795954E0008E6FE /* SceneDelegate.swift in Sources */,
+				57646881279595F50008E6FE /* ServiceLayerProtocol.swift in Sources */,
+				57646890279598480008E6FE /* AdviceModelProtocol.swift in Sources */,
+				57646889279596800008E6FE /* AdviceService.swift in Sources */,
+				5764688E279598070008E6FE /* AdviceViewModel.swift in Sources */,
+				5764687F279595DC0008E6FE /* ServiceLayer.swift in Sources */,
+				57646883279596140008E6FE /* RequestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
